@@ -12,15 +12,14 @@ function standardKeyrelease(){
 function standardInput(){
   return prompt("input data");
 }
-function standardOutput(){
+function standardOutput(data){
+  
+}
+function standardDebug(data){
 
 }
-function standardDebug(){
-
-}
-
-var prospect={
-  firstsetupBehaviour(){
+function standard
+function standardBehaviour(){
     var cyberMouse=new RattishInterpreter();
     cyberMouse.addCommands(
       "basic",
@@ -30,15 +29,16 @@ var prospect={
       }],
       [">",function(arguments){
         standardDebug("awaiting input...");
-        standardDebug("");
+        standardDebug("received: "+arguments);
 
       }],
       [".",function(arguments){
-        console.log("waiting");
+        standardDebug("waiting "+arguments);
         await sleep(parseInt(arguments));
+        standardDebug("sleep ends");
       }],
       ["_",function(arguments){
-
+        standardDebug("pressing key "+arguments);
       }],
       ["^",function(arguments){
 
@@ -124,4 +124,3 @@ var prospect={
     );
     cyberMouse.addCommand("#");
   }
-}
