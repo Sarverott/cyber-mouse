@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>CYBER-MOUSE: testing envitoment for rattish-lang</title>
     <link rel="stylesheet" href="main.css">
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="core/file.js"></script>
     <script src="core/dir.js"></script>
     <script src="core/disk.js"></script>
@@ -228,14 +230,24 @@
         setTimeout(function(){loadingScreen("hide")},300);
       </script>
     </div>
-    <header>
-    <aside><p id="filesystem"></p></aside>
-    <main>
+    <div>
+      <header>
+        <h1>cybermouse</h1>
+      </header>
+      <aside>
+        <h4>files</h4>
+        <div id="filesystem"></div>
+      </aside>
+      <main>
         <textarea id="ratscript" name="name" rows="8" cols="80"></textarea>
-      <article id="output"></article>
-      <section id="keyboard-record"></section>
+        <article id="output"></article>
+        <section id="keyboard-record"></section>
       </main>
-      <aside><p id="debug"></p></aside>
-      <footer></footer>
+      <aside>
+        <h4>DEBUG</h4>
+        <p id="debug"></p>
+      </aside>
+      <footer><a href="https://github.com/Sarverott/cyber-mouse">repo on github</a></footer>
+    </div>
   </body>
 </html>
